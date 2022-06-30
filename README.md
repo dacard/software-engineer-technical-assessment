@@ -6,8 +6,14 @@ To run the tests just run `npx jest --verbose` in the server directory.
 ## Important notes
 - Before run the tests, please comment the `migrate` command on file `server/src/migrations/1_dna.sql`. There is a bug postgres package when the connection is mocked and the migration fails. I tried to solve it but I cannot find the solution.
 
+## Prepare the environment
+- Install the dependencies:
+    - From root folder:  `cd client && npm install`
+    - From root folder:  `cd server && npm install`
+
 ## Run
- From the root folder, just run `docker compose up` then open a browser on http://localhost:3000/
+ From the root folder, just run `docker compose up`.
+ Wait until all services (database, server and client) starts then open a browser on http://localhost:3000/
 
 
 
